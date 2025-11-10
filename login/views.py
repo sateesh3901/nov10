@@ -1,10 +1,9 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-import json
+import json,bcrypt
 from django.views.decorators.csrf import csrf_exempt
 from .models import User
 from .serializers import UserSerializer
-import bcrypt
 
 # Create your views here.
 def home(req):
